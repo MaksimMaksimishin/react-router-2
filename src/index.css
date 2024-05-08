@@ -1,0 +1,134 @@
+/* Стили для сброса стандартных отступов и размеров */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Стили для списков */
+li {
+  list-style: none;
+}
+
+/* Стили для основного контейнера */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Стили для кнопок */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для основного контейнера */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Стили для заголовка */
+.header {
+  padding: 15px;
+  background: #007bff;
+  color: #fff;
+}
+
+/* Стили для меню */
+.menu {
+  margin-bottom: 20px; /* Добавим немного отступа снизу */
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 15px; /* Добавим немного отступа между пунктами меню */
+}
+
+.menu__link {
+  display: block;
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.menu__link:hover,
+.menu__link_active {
+  border-color: #333;
+  background: #333;
+  color: #fff;
+}
+
+/* Стили для основного контента */
+.main {
+  padding: 20px;
+  flex-grow: 1; /* Занимаем всю доступную высоту */
+}
+
+/* Стили для заголовков постов */
+.posts__title {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Стили для постов */
+.post {
+  margin-bottom: 20px; /* Добавим немного отступа снизу */
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* Стили для посещенных постов */
+.post.visited {
+  background: #ddf7dd;
+}
+
+/* Стили для подвала */
+.footer {
+  padding: 20px;
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+/* Стили для окна истории переходов */
+.history-window {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 250px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-window ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-window ul li {
+  margin-bottom: 5px;
+}
